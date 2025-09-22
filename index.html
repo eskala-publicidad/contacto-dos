@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contáctanos - Arteskala</title>
+  <style>
+    /* --------- Estilos Globales --------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: #ffffff;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    /* --------- Logo y Título --------- */
+    .header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .header img {
+      width: 120px;
+      height: auto;
+      margin-bottom: 15px;
+    }
+
+    .header h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #222;
+    }
+
+    /* --------- Texto --------- */
+    .text {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+      text-align: center;
+      color: #444;
+    }
+
+    /* --------- Botones WhatsApp --------- */
+    .whatsapp-container {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      width: 100%;
+      max-width: 300px;
+    }
+
+    .whatsapp-btn {
+      text-decoration: none;
+      padding: 15px;
+      background-color: #25D366;
+      color: white;
+      font-size: 1.1rem;
+      font-weight: bold;
+      border-radius: 10px;
+      text-align: center;
+      transition: all 0.3s ease-in-out;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Animación al pasar el mouse */
+    .whatsapp-btn:hover {
+      background-color: #1ebe5b;
+      transform: scale(1.05);
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Animación de entrada */
+    .fade-in {
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    /* --------- Responsivo --------- */
+    @media (max-width: 500px) {
+      .header img {
+        width: 90px;
+      }
+      .header h1 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- LOGO Y NOMBRE -->
+  <div class="header fade-in">
+    <img src="logo.png" alt="logo">
+    <h1>Arteskala Publicidad</h1>
+  </div>
+
+  <!-- TEXTO DE CONTACTO -->
+  <div class="text fade-in">
+    <p>¡Contáctanos por WhatsApp para una cotizacion!</p>
+  </div>
+
+  <!-- BOTONES DE WHATSAPP -->
+  <div class="whatsapp-container fade-in">
+    <!-- Botón para Ventas -->
+    <a href="https://wa.me/524773274424?text=hola%20arteskala,%20quiero%20una%20cotizacion%20para%20la%20publicidad%20en%20partidos%20de%20futbol%20mexicano" 
+       target="_blank" class="whatsapp-btn">
+      Cotización 1
+    </a>
+
+    <!-- Botón para Cotizaciones -->
+    <a href="https://wa.me/524771220304?text=hola%20arteskala,%20quiero%20una%20cotizacion%20para%20la%20publicidad%20en%20partidos%20de%20futbol%20mexicano" 
+       target="_blank" class="whatsapp-btn">
+      Cotización 2
+    </a>
+  </div>
+</body>
+</html>
